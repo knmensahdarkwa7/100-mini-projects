@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="93cf4419-e5a4-4a3c-988d-9fc93e6c72b4" name="Changes" comment="Code Decides if a given number is a prime number or not">
-      <change afterPath="$PROJECT_DIR$/Logic and Math Challenges/Binary conversion to decimal/Binary to  decimal conversion modular version(function).py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Logic and Math Challenges/Binary conversion to decimal/Binary to decimal converter.py" afterDir="false" />
+    <list default="true" id="93cf4419-e5a4-4a3c-988d-9fc93e6c72b4" name="Changes" comment="This Imparative type program acts like a simple alarm clock, it counts down from a given number of seconds&#10;Will upgrade to be able to enter mins, hours and days">
+      <change afterPath="$PROJECT_DIR$/Matrix operations toolkit.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Python_Project_Ideas_List_Final.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sectional details" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -36,6 +37,9 @@
     &quot;accountId&quot;: &quot;35c91675-3c05-49da-afc1-490c353257d3&quot;
   }
 }</component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 3
 }</component>
@@ -49,6 +53,8 @@
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "Python.Binary to  decimal conversion modular version(function).executor": "Run",
     "Python.Binary to decimal converter.executor": "Run",
+    "Python.Calculator.executor": "Run",
+    "Python.Matrix operations toolkit.executor": "Run",
     "Python.✅prime number checker.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
@@ -57,6 +63,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\knmen\PycharmProjects\100 Mini projects" />
       <recent name="C:\Users\knmen\PycharmProjects\100 Mini projects\Logic and Math Challenges\Binary conversion to decimal" />
     </key>
   </component>
@@ -83,11 +90,55 @@
       <option name="project" value="LOCAL" />
       <updated>1752774299267</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="This program converts binary numbers to decimals&#10;Imperative version of the code">
+      <option name="closed" value="true" />
+      <created>1752933024238</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1752933024238</updated>
+    </task>
+    <task id="LOCAL-00003" summary="This program converts binary numbers to decimals&#10;Declarative version of the code">
+      <option name="closed" value="true" />
+      <created>1752933070706</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1752933070706</updated>
+    </task>
+    <task id="LOCAL-00004" summary="This Imparative type program Calculates an equation consisting of only two terms and one operator Upgrades will be made">
+      <option name="closed" value="true" />
+      <created>1752935532379</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1752935532379</updated>
+    </task>
+    <task id="LOCAL-00005" summary="This Imparative type program acts like a simple alarm clock, it counts down from a given number of seconds&#10;Will upgrade to be able to enter mins, hours and days">
+      <option name="closed" value="true" />
+      <created>1752936859960</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1752936859960</updated>
+    </task>
+    <task id="LOCAL-00006" summary="This Imparative type program acts like a simple alarm clock, it counts down from a given number of seconds&#10;Will upgrade to be able to enter mins, hours and days">
+      <option name="closed" value="true" />
+      <created>1752936866645</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1752936866645</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Code Decides if a given number is a prime number or not" />
-    <option name="LAST_COMMIT_MESSAGE" value="Code Decides if a given number is a prime number or not" />
+    <MESSAGE value="This program converts binary numbers to decimals&#10;Imperative version of the code" />
+    <MESSAGE value="This program converts binary numbers to decimals&#10;Declarative version of the code" />
+    <MESSAGE value="This Imparative type program Calculates an equation consisting of only two terms and one operator Upgrades will be made" />
+    <MESSAGE value="This Imparative type program acts like a simple alarm clock, it counts down from a given number of seconds&#10;Will upgrade to be able to enter mins, hours and days" />
+    <option name="LAST_COMMIT_MESSAGE" value="This Imparative type program acts like a simple alarm clock, it counts down from a given number of seconds&#10;Will upgrade to be able to enter mins, hours and days" />
   </component>
 </project>
