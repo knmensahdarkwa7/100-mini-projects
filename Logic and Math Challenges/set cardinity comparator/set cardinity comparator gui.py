@@ -1,5 +1,4 @@
 from tkinter import PhotoImage
-
 import customtkinter as ctk
 from logic_module import creating, cardinality, biggest
 
@@ -12,7 +11,7 @@ window = ctk.CTk()
 window.geometry("420x260")
 window.title("Set Cardinality Comparator")
 
-icon= PhotoImage(file='Chat GPT Image Jul 27, 2025, 03_08_38 PM.png')
+icon= PhotoImage(file='ChatGPT Image Jul 27, 2025, 03_08_38 PM.png')
 window.iconphoto(True, icon)
 
 # Entry fields
@@ -28,6 +27,8 @@ label1.place(x=30, y=20)
 
 label2 = ctk.CTkLabel(window, text="List2:", font=("Segoe UI", 12, "bold"))
 label2.place(x=30, y=60)
+
+
 
 result_label = ctk.CTkLabel(window, text="", wraplength=380, anchor="w", justify="left")
 result_label.place(x=30, y=190)
