@@ -1,53 +1,51 @@
-from tkinter import PhotoImage
 import customtkinter as ctk
+from tkinter import PhotoImage
 from logic_module import creating, cardinality, biggest
 
-# Initialize theme
-ctk.set_appearance_mode("Dark")  # Options: "System", "Dark", "Light"
-ctk.set_default_color_theme("green")  # Options: "blue", "green", "dark-blue"
+ctk.set_appearance_mode("Dark")
+ctk.set_default_color_theme("green")
 
 # Create main window
 window = ctk.CTk()
-window.geometry("420x260")
+window.geometry("420x300")
 window.title("Set Cardinality Comparator")
 
-icon= PhotoImage(file='ChatGPT Image Jul 27, 2025, 03_08_38 PM.png')
+# Icon
+icon = PhotoImage(file='ChatGPT Image Jul 27, 2025, 03_08_38 PM.png')
 window.iconphoto(True, icon)
 
-# Entry fields
-entry1 = ctk.CTkEntry(window, width=300, placeholder_text="Enter List 1")
-entry1.place(x=80, y=20)
+# Configure root window grid
+window.grid_rowconfigure(0, weight=1)
+window.grid_columnconfigure(0, weight=1)
 
-entry2 = ctk.CTkEntry(window, width=300, placeholder_text="Enter List 2")
-entry2.place(x=80, y=60)
+# Create a frame that centers its contents
+content_frame = ctk.CTkFrame(window, corner_radius=10)
+content_frame.grid(row=0, column=0, sticky="nsew", padx=20, pady=20)
 
-# Labels
-label1 = ctk.CTkLabel(window, text="List1:", font=("Segoe UI", 12, "bold"))
-label1.place(x=30, y=20)
+content_frame.grid_columnconfigure(0, weight=1)  # For horizontal centering
 
-label2 = ctk.CTkLabel(window, text="List2:", font=("Segoe UI", 12, "bold"))
-label2.place(x=30, y=60)
-
-
-
-result_label = ctk.CTkLabel(window, text="", wraplength=380, anchor="w", justify="left")
-result_label.place(x=30, y=190)
-
-# Button actions
-def run_creating():
-    creating(entry1, entry2)
-    result_label.configure(text="🎲 Random sets generated.")
-
-def run_cardinality():
-    cardinality()
-    result_label.configure(text="🧹 Duplicates removed.")
-
-def run_biggest():
-    result_label.configure(text=f"📊 {biggest()}")
+# Labels + Entry fields (organized in sub-frames)
+for i, label_text in enumerate(["List1:", "List2:"]):
+    row_frame = ctk.CTkFrame(content_frame)
+    row_frame.grid(row=i, column=0, pady=5)
+    label = ctk.CTkLabel(row_frame, text=label_text, font=("Segoe UI", 12, "bold"))
+    label.pack(side="left", padx=(0, 10))
+    entry = ctk.CTkEntry(row_frame, width=300, placeholder_text=f"Enter List {i+1}")
+    entry.pack(side="left")
+    if i == 0:
+        entry1 = entry
+    else:
+        entry2 = entry
 
 # Buttons
-ctk.CTkButton(window, text="Generate Random Sets", command=run_creating).place(x=30, y=100)
-ctk.CTkButton(window, text="Remove Duplicates", command=run_cardinality).place(x=30, y=130)
-ctk.CTkButton(window, text="Compare Cardinality", command=run_biggest).place(x=30, y=160)
+button_frame = ctk.CTkFrame(content_frame)
+button_frame.grid(row=2, column=0, pady=10)
+ctk.CTkButton(button_frame, text="Generate Random Sets", command=lambda: [creating(entry1, entry2), result_label.configure(text="🎲 Random sets generated.")]).pack(pady=2)
+ctk.CTkButton(button_frame, text="Remove Duplicates", command=lambda: [cardinality(), result_label.configure(text="🧹 Duplicates removed.")]).pack(pady=2)
+ctk.CTkButton(button_frame, text="Compare Cardinality", command=lambda: result_label.configure(text=f"📊 {biggest()}")).pack(pady=2)
+
+# Result Label
+result_label = ctk.CTkLabel(content_frame, text="", wraplength=380, anchor="w", justify="left")
+result_label.grid(row=3, column=0, pady=(10, 0), sticky="w")
 
 window.mainloop()
