@@ -10,7 +10,7 @@ while True:
             result = sum(int(num.strip()) for num in numbers)
             print("\nAdding", end="", flush=True)
             for i in range(6):
-                sys.stdout.write(".")
+                sys.stdout.write("..")
                 sys.stdout.flush()
                 sleep(0.5)
             print("\n")
@@ -24,7 +24,7 @@ while True:
                 result -= int(num.strip())
             print("\nSubtracting", end="", flush=True)
             for i in range(6):
-                sys.stdout.write(".")
+                sys.stdout.write("..")
                 sys.stdout.flush()
                 sleep(0.5)
             print("\n")
@@ -37,7 +37,7 @@ while True:
                 result *= int(num.strip())
             print("\nMultiplying", end="", flush=True)
             for i in range(6):
-                sys.stdout.write(".")
+                sys.stdout.write("..")
                 sys.stdout.flush()
                 sleep(0.5)
             print("\n")
@@ -53,7 +53,7 @@ while True:
                 result /= divisor
             print("\nDividing", end="", flush=True)
             for i in range(6):
-                sys.stdout.write(".")
+                sys.stdout.write("..")
                 sys.stdout.flush()
                 sleep(0.5)
             print("\n")
